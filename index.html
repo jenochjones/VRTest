@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Cube Interaction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="enter-vr">Enter VR</button>
+    <div id="scene-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@webxr-input-profiles/assets@1.0.0/dist/profiles/vr-controls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/jsm/webxr/VRButton.js"></script>
+
+    <!-- Import Map for Three.js and its addons -->
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/"
+          }
+        }
+        </script>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
 
